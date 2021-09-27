@@ -10,55 +10,39 @@ export const ProjectContainer = styled.div`
     display: grid;
 `;
 
-export const ProjectTextContainer = styled.div`
+export const ProjectBody = styled.div`
     padding: 1.5rem;
     text-align: left;
 `;
 
 export const ProejctHeader = styled.div`
-
-`;
-
-export const ProjectHeaderTop = styled.div`
+    padding: 1.5rem;
+    text-align: left;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
-`;
-
-export const ProjectHeaderBottom = styled.div`
-    text-align: unset;
-    margin-top: 0px;
-
-    @media (max-width: 576px) {
-    text-align: center;
-    margin-top: 5px;
-    }
 `;
 
 export const ProjectTitle = styled.div` 
     width: auto;
     text-align: unset;
     font-family: "Roboto",sans-serif;
+    padding-bottom: .15rem;
+   
     & > h2 { 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     @media (max-width: 576px) {
-    width: 100%;
-    text-align: center;
+        width: 100%;
+        text-align: center;
     }
 `;
 
 export const ProjectRepoLink = styled.a`
-    margin-left: auto;
-
-
-    @media (max-width: 576px) {
-    margin-left: unset;
-    }
 `;
 
 export const ProjectGithubLogo = styled.img`
@@ -75,7 +59,7 @@ export const ProjectDescriptionContainer = styled.div`
     font-size: .9rem;
     font-weight: 400;
     color: #747373;
-  
+    font-family: "Roboto",sans-serif;
 `;
 
 export const ProjectTechStacksContainer = styled.div`

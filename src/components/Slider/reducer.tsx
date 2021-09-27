@@ -8,8 +8,7 @@ export const sliderReducer = (state: SliderState, action: SliderActions) => {
                 offsetImage: action.data.offsetImage,
                 slideDirection: action.data.slideDirection,
                 slidePosition: action.data.slidePosition,
-                isPrepared: true
-
+                isPrepared: true,
             }
         case 'start':
             return {

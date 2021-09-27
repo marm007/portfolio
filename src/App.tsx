@@ -45,7 +45,9 @@ const App = (): JSX.Element => {
 
       <Projects>
         {data.projects.map(project => {
-          return <Project title={project.title}
+          return <Project 
+            key={`project-${project.title}`}
+            title={project.title}
             photos={project.photos}
             desc={project.desc}
             techStack={project.techStack}

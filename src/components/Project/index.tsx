@@ -1,8 +1,8 @@
 import React from "react";
-import githubIcon from "../../assets/github-icon.svg"
+import { techStackIcons } from "../../data/icons";
 import Slider from "../Slider";
 import TechStack from "../TechStack";
-import { ProejctHeader, ProjectContainer, ProjectDescriptionContainer, ProjectGithubLogo, ProjectHeaderBottom, ProjectHeaderTop, ProjectRepoLink, ProjectTechStacksContainer, ProjectTextContainer, ProjectTitle, ProjectWebsiteLink } from "./styled";
+import { ProejctHeader, ProjectBody, ProjectContainer, ProjectDescriptionContainer, ProjectGithubLogo, ProjectRepoLink, ProjectTechStacksContainer, ProjectTitle, ProjectWebsiteLink } from "./styled";
 import { ProjectProps } from "./types";
 
 
@@ -16,30 +16,36 @@ const Project = ({
     techStack
 }: ProjectProps): JSX.Element => {
     return <ProjectContainer>
+        <ProejctHeader>
+            <div>
+                <ProjectRepoLink href={repo}>
+                    <ProjectGithubLogo src="./assets/github-icon.svg" />
+                </ProjectRepoLink>
+            </div>
+            <div style={{ paddingLeft: '1.5rem' }}>
+
+                <ProjectTitle>
+                    <h2>{title}</h2>
+                </ProjectTitle>
+
+                {website && <ProjectWebsiteLink href={website}>{website}</ProjectWebsiteLink>}
+            </div>
+
+        </ProejctHeader>
         <Slider photos={photos} />
-        <ProjectTextContainer>
-            <ProejctHeader>
-                <ProjectHeaderTop>
-                    <ProjectTitle>
-                        <h2>{title}</h2>
-                    </ProjectTitle>
-                    <ProjectRepoLink href={repo}>
-                        <ProjectGithubLogo src={githubIcon} />
-                    </ProjectRepoLink>
-                </ProjectHeaderTop>
-                <ProjectHeaderBottom>
-                    {website && <ProjectWebsiteLink href={website}>{website}</ProjectWebsiteLink>}
-                </ProjectHeaderBottom>
-            </ProejctHeader>
+        <ProjectBody>
+
             <ProjectDescriptionContainer>
                 <span>{desc.short}</span>
             </ProjectDescriptionContainer>
             <ProjectTechStacksContainer>
-                {techStack.map(s => {
-                    return <TechStack name={s.name} icon={s.icon} />
-                })}
+                {
+                    techStack.map((s, index) => {
+                        return <TechStack key={`stack-${index}`} name={s} icon={techStackIcons[s]} />
+                    })
+                }
             </ProjectTechStacksContainer>
-        </ProjectTextContainer>
+        </ProjectBody>
     </ProjectContainer>;
 };
 

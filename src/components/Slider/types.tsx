@@ -34,6 +34,10 @@ export interface SliderBulletProps {
 
 export interface SliderImageProps {
     src: any;
-    animate?: boolean;
+    animate?: number;
     direction?: SlideDirection;
+}
+
+export interface SliderButtonProps {
+    onClick: object;
 }

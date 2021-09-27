@@ -7,6 +7,6 @@ export type ProjectProps = {
   video?: string;
   website?: string;
   desc: DescriptionModel;
-  techStack: TechStackModel[];
+  techStack: string[];
   repo: string;
 };
