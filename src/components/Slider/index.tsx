@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef } from "react";
 import { sliderReducer } from "./reducer";
-import { SliderBullet, SliderBulletContainer, SliderContainer, SliderDim, SliderImage, SliderOffsetImage } from "./styled";
+import { SliderBullet, SliderBulletContainer, SliderContainer, SliderImage, SliderOffsetImage, LeftArrowImage, RightArrowImage, SliderLeftButton, SliderRightButton } from "./styled";
 import { SlideDirection, SliderProps, SliderState } from "./types";
 
 const Slider = ({ photos }: SliderProps): JSX.Element => {
@@ -28,7 +28,6 @@ const Slider = ({ photos }: SliderProps): JSX.Element => {
     useEffect(() => {
         let current = sliderRef.current;
         const handleAnimationEnd = () => {
-            console.log("ENDNANDNAD")
             dispatch({ type: "end" })
         }
 
@@ -48,35 +47,58 @@ const Slider = ({ photos }: SliderProps): JSX.Element => {
                 type: "prepare", data: {
                     offsetImage: photos[index],
                     slidePosition: index,
-                    slideDirection: (change < 0 ? SlideDirection.Left : SlideDirection.Right)
+                    slideDirection: (change < 0 ? SlideDirection.Right : SlideDirection.Left)
                 }
             })
         }
     }
 
-    return <SliderContainer ref={sliderRef}>
-        <SliderImage animate={false} src={currentImage} />
-        <SliderOffsetImage animate={playAnimation} direction={slideDirection}
-            src={offsetImage} onLoad={() => {
-                if (isPrepared) {
-                    console.log("LOADED")
-                    dispatch({
-                        type: "start"
+    const handleImageChangeButtonClick = (direction: SlideDirection) => {
+        if (playAnimation || isPrepared) return;
+
+        let index = slidePosition + (direction === SlideDirection.Left ? -1 : 1);
+        if (index >= photos.length) index = 0;
+        if (index < 0) index = photos.length - 1;
+
+        dispatch({
+            type: "prepare", data: {
+                offsetImage: photos[index],
+                slidePosition: index,
+                slideDirection: direction
+            }
+        })
+    }
+
+    return (
+        <>
+            <SliderContainer ref={sliderRef}>
+                <SliderImage animate={playAnimation ? 1 : 0} direction={slideDirection} src={currentImage} />
+                <SliderOffsetImage animate={playAnimation ? 1 : 0} direction={slideDirection}
+                    src={offsetImage} onLoad={() => {
+                        if (isPrepared) {
+                            dispatch({
+                                type: "start"
+                            })
+                        }
+                    }} />
+                <SliderLeftButton onClick={() => handleImageChangeButtonClick(SlideDirection.Left)}>
+                    <LeftArrowImage src="./assets/left-arrow.svg" />
+                </SliderLeftButton>
+                <SliderRightButton onClick={() => handleImageChangeButtonClick(SlideDirection.Right)}>
+                    <RightArrowImage src="./assets/right-arrow.svg" />
+                </SliderRightButton>
+            </SliderContainer>
+            <SliderBulletContainer>
+                {
+                    [...photos].map((_, index) => {
+                        return <SliderBullet key={index} isPicked={index === slidePosition}
+                            onClick={() => handleImageChange(index)}>index</SliderBullet>
                     })
                 }
-            }} />
-        <SliderDim />
+            </SliderBulletContainer>
+        </>
+    )
 
-     {/*    <SliderBulletContainer>
-            {
-                [...photos].map((_, index) => {
-                    //console.log(`${index} - ${sliderPosition}`, index === sliderPosition)
-                    return <SliderBullet key={index} isPicked={index === slidePosition}
-                        onClick={() => handleImageChange(index)}>index</SliderBullet>
-                })
-            }
-        </SliderBulletContainer> */}
-    </SliderContainer>
 }
 
 export default Slider;

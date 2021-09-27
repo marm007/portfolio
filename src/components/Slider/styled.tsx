@@ -143,15 +143,6 @@ export const SliderBullet = styled.button<SliderBulletProps>`
     }
 `;
 
-export const SliderDim = styled.div`
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #03192730;
-`;
-
 const ArrowImage = styled.img`
     width: 50px;
     height: 50px;

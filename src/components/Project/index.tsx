@@ -11,14 +11,15 @@ const Project = ({
     photos,
     video,
     desc,
-    repo,
-    website,
+    repositoryURL,
+    frontendURL,
+    backendURL,
     techStack
 }: ProjectProps): JSX.Element => {
     return <ProjectContainer>
         <ProejctHeader>
             <div>
-                <ProjectRepoLink href={repo}>
+                <ProjectRepoLink href={repositoryURL}>
                     <ProjectGithubLogo src="./assets/github-icon.svg" />
                 </ProjectRepoLink>
             </div>
@@ -28,7 +29,8 @@ const Project = ({
                     <h2>{title}</h2>
                 </ProjectTitle>
 
-                {website && <ProjectWebsiteLink href={website}>{website}</ProjectWebsiteLink>}
+                {frontendURL && <ProjectWebsiteLink href={frontendURL}>Live demo</ProjectWebsiteLink>}
+                {backendURL && <ProjectWebsiteLink style={{ marginLeft: '5px' }} href={backendURL}>API</ProjectWebsiteLink>}
             </div>
 
         </ProejctHeader>

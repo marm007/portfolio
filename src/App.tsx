@@ -51,8 +51,9 @@ const App = (): JSX.Element => {
             photos={project.photos}
             desc={project.desc}
             techStack={project.techStack}
-            website={project.website}
-            repo={project.repo} />
+            frontendURL={project.frontendURL}
+            backendURL={project.backendURL}
+            repositoryURL={project.repositoryURL} />
         })}
 
       </Projects>

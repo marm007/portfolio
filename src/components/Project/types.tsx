@@ -1,12 +1,12 @@
 import DescriptionModel from "../../models/description";
-import TechStackModel from "../../models/tech-stack";
 
 export type ProjectProps = {
   title: string;
   photos: string[];
   video?: string;
-  website?: string;
+  frontendURL?: string;
+  backendURL?: string;
   desc: DescriptionModel;
   techStack: string[];
-  repo: string;
+  repositoryURL: string;
 };
