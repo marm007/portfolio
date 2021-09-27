@@ -8,6 +8,7 @@ import { ProjectProps } from "./types";
 
 const Project = ({
     title,
+    subtitle,
     photos,
     video,
     desc,
@@ -27,10 +28,10 @@ const Project = ({
 
                 <ProjectTitle>
                     <h2>{title}</h2>
+                    {subtitle && <span style={{ color: "#747373" }}>{subtitle}</span>}
                 </ProjectTitle>
-
-                {frontendURL && <ProjectWebsiteLink href={frontendURL}>Live demo</ProjectWebsiteLink>}
-                {backendURL && <ProjectWebsiteLink style={{ marginLeft: '5px' }} href={backendURL}>API</ProjectWebsiteLink>}
+                {frontendURL && <ProjectWebsiteLink ><a href={frontendURL}>Live demo</a></ProjectWebsiteLink>}
+                {backendURL && <ProjectWebsiteLink ><a href={backendURL}>API</a></ProjectWebsiteLink>}
             </div>
 
         </ProejctHeader>
@@ -38,7 +39,7 @@ const Project = ({
         <ProjectBody>
 
             <ProjectDescriptionContainer>
-                <span>{desc.short}</span>
+                <span>{desc}</span>
             </ProjectDescriptionContainer>
             <ProjectTechStacksContainer>
                 {

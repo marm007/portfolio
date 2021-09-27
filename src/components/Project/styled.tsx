@@ -27,18 +27,10 @@ export const ProjectTitle = styled.div`
     width: auto;
     text-align: unset;
     font-family: "Roboto",sans-serif;
-    padding-bottom: .15rem;
-   
-    & > h2 { 
-        margin: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+    padding-bottom: .5rem;
 
-    @media (max-width: 576px) {
-        width: 100%;
-        text-align: center;
+    & > h2 { 
+        margin: 0 0 0.25rem;
     }
 `;
 
@@ -67,15 +59,21 @@ export const ProjectTechStacksContainer = styled.div`
     flex-wrap: wrap;
 `;
 
-export const ProjectWebsiteLink = styled.a`
-    color: #6d56c1;
-    transition: all .3s;
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;      
+const linkColor = "#5673c1"
 
-    &:hover {
-    color: #6d56c1;
-    text-decoration: underline;
+export const ProjectWebsiteLink = styled.div`
+    margin-bottom: .35rem;
+
+    & a  {
+        color: ${linkColor};
+        transition: all .3s;
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;      
+
+        &:hover {
+            color: ${linkColor};
+            text-decoration: underline;
+        }
     }
 `;

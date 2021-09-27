@@ -2,7 +2,10 @@ type TechStackType = {
     [key: string]: string;
 }
 export const techStackIcons:TechStackType = {
+    "heroku": "./assets/icons/heroku-icon.svg",
+    "angular": "./assets/icons/angular-icon.svg",
     "nodejs": "./assets/icons/nodejs-icon.svg",
+    "express": "./assets/icons/express.svg",
     "c#": "./assets/icons/c-sharp.svg",
     "cloudinary": "./assets/icons/cloudinary.svg",
     "django": "./assets/icons/django-icon.svg",

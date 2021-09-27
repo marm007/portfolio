@@ -6,18 +6,23 @@ import data from "./data/projects.json";
 const Container = styled.div`
     text-align: justify;
     max-width: 950px;
-    padding: .25rem 2.5rem;
+    padding: .25rem 0;
     margin: auto auto;
 `;
 
 const Header = styled.div`
-    padding: .5rem .5rem;
+    padding: .5rem 3rem;
     display: grid;
     font-size: calc(10px + 2vmin);
     color: black;
+    line-height: 1.5;
 
     & > span {
       font-size: 16px;
+    }
+
+    @media(max-width: 576px) {
+      padding: .5rem 0.5rem;
     }
 `;
 
@@ -45,9 +50,10 @@ const App = (): JSX.Element => {
 
       <Projects>
         {data.projects.map(project => {
-          return <Project 
+          return <Project
             key={`project-${project.title}`}
             title={project.title}
+            subtitle={project.subtitle}
             photos={project.photos}
             desc={project.desc}
             techStack={project.techStack}

@@ -1,12 +1,11 @@
-import DescriptionModel from "../../models/description";
-
 export type ProjectProps = {
   title: string;
+  subtitle?: string;
   photos: string[];
   video?: string;
   frontendURL?: string;
   backendURL?: string;
-  desc: DescriptionModel;
+  desc: string;
   techStack: string[];
   repositoryURL: string;
 };
