@@ -14,16 +14,17 @@ const Video = ({ animate, ...props }: VideoProps) => {
             videoRef.current.pause()
         }
 
-        if(animate && props.style?.visibility === "hidden" && videoRef?.current) {
+        if (animate && props.style?.visibility === "hidden" && videoRef?.current) {
             videoRef.current.load()
+            videoRef.current.pause()
         }
-       
+
     }, [animate, props.style?.visibility])
 
     useIntersectionObserver({
         target: videoRef,
         onIntersect: ([{ isIntersecting }], observableElement) => {
-            if (!animate && props.autoPlay && videoRef?.current)
+            if (!animate && props.autoPlay && videoRef?.current && props.style?.visibility === "visible")
                 if (isIntersecting) {
                     videoRef.current.play()
                 }

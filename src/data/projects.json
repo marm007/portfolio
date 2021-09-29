@@ -4,14 +4,14 @@
             "title": "React Film App",
             "subtitle": "YouTube Like App",
             "photos": [
-                "./assets/filmapp-react/1.png",
-                "./assets/filmapp-react/2.png",
-                "./assets/filmapp-react/3.png",
-                "./assets/filmapp-react/5.png",
-                "./assets/filmapp-react/6.png",
-                "./assets/filmapp-react/7.png"
+                "./assets/filmapp_react/1.png",
+                "./assets/filmapp_react/2.png",
+                "./assets/filmapp_react/3.png",
+                "./assets/filmapp_react/5.png",
+                "./assets/filmapp_react/6.png",
+                "./assets/filmapp_react/7.png"
             ],
-            "video": "./assets/bunny_5s.mp4",
+            "video": "",
             "desc": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
             "repositoryURL": "https://github.com/marm007/filmapp-react-frontend",
             "frontendURL": "https://marm007.github.io/filmapp-react-frontend/",
@@ -29,14 +29,14 @@
             "title": "Angular Photo App",
             "subtitle": "Instagram Like App",
             "photos": [
-                "./assets/photoapp-angular/1.png",
-                "./assets/photoapp-angular/3.png",
-                "./assets/photoapp-angular/4.png",
-                "./assets/photoapp-angular/5.png",
-                "./assets/photoapp-angular/6.png",
-                "./assets/photoapp-angular/7.png",
-                "./assets/photoapp-angular/8.png",
-                "./assets/photoapp-angular/9.png"
+                "./assets/photoapp_angular/1.png",
+                "./assets/photoapp_angular/3.png",
+                "./assets/photoapp_angular/4.png",
+                "./assets/photoapp_angular/5.png",
+                "./assets/photoapp_angular/6.png",
+                "./assets/photoapp_angular/7.png",
+                "./assets/photoapp_angular/8.png",
+                "./assets/photoapp_angular/9.png"
             ],
             "video": "",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
@@ -57,19 +57,16 @@
             "title": "Vue Film App",
             "subtitle": "YouTube Like App",
             "photos": [
-                "./assets/photoapp-angular/1.png",
-                "./assets/photoapp-angular/3.png",
-                "./assets/photoapp-angular/4.png",
-                "./assets/photoapp-angular/5.png",
-                "./assets/photoapp-angular/6.png",
-                "./assets/photoapp-angular/7.png",
-                "./assets/photoapp-angular/8.png",
-                "./assets/photoapp-angular/9.png"
+                "./assets/filmapp_vue/1.png",
+                "./assets/filmapp_vue/2.png",
+                "./assets/filmapp_vue/3.png",
+                "./assets/filmapp_vue/4.png",
+                "./assets/filmapp_vue/5.png"
             ],
             "video": "",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
-            "frontendURL": "https://marm007.github.io/photoapp-angular-frontend/",
+            "repositoryURL": "https://github.com/marm007/filmampp-vue-frontend",
+            "frontendURL": "https://marm007.github.io/filmampp-vue-frontend/",
             "backendURL": "https://marm007.github.io/photoapp-angular-frontend/",
             "techStack": [
                 "vue",
@@ -78,6 +75,76 @@
                 "javascript",
                 "java",
                 "heroku"
+            ]
+        },
+        {
+            "title": "Grain Growth Parallel",
+            "subtitle": "",
+            "photos": [
+                "./assets/grain_growth_parallel/1.png",
+                "./assets/grain_growth_parallel/2.png",
+                "./assets/grain_growth_parallel/3.png"
+            ],
+            "video": "./assets/grain_growth_parallel/video.mp4",
+            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "frontendURL": "",
+            "backendURL": "",
+            "techStack": [
+                "c#"
+            ]
+        },
+        {
+            "title": "Game of Life",
+            "subtitle": "",
+            "photos": [
+                "./assets/game_of_life/1.png",
+                "./assets/game_of_life/2.png",
+                "./assets/game_of_life/3.png"
+            ],
+            "video": "/assets/game_of_life/video.mp4",
+            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "frontendURL": "",
+            "backendURL": "",
+            "techStack": [
+                "c#"
+            ]
+        },
+        {
+            "title": "Cellular Automata",
+            "subtitle": "",
+            "photos": [
+                "./assets/cellular_automata/1.png",
+                "./assets/cellular_automata/2.png",
+                "./assets/cellular_automata/3.png"
+            ],
+            "video": "./assets/cellular_automata/video.mp4",
+            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "frontendURL": "",
+            "backendURL": "",
+            "techStack": [
+                "c#"
+            ]
+        },
+        {
+            "title": "Grain Growth",
+            "subtitle": "",
+            "photos": [
+                "./assets/grain_growth/1.png",
+                "./assets/grain_growth/2.png",
+                "./assets/grain_growth/3.png",
+                "./assets/grain_growth/4.png",
+                "./assets/grain_growth/5.png"
+            ],
+            "video": "./assets/grain_growth/video.mp4",
+            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "frontendURL": "",
+            "backendURL": "",
+            "techStack": [
+                "c#"
             ]
         }
     ]
