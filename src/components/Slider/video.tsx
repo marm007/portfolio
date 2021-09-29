@@ -10,7 +10,6 @@ const Video = ({ animate, ...props }: VideoProps) => {
     const videoRef = useRef<HTMLVideoElement | null>(null)
 
     useEffect(() => {
-        console.log(animate)
         if (animate && videoRef?.current) {
             videoRef.current.pause()
         }

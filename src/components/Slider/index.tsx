@@ -32,7 +32,6 @@ const Slider = ({ photos, video }: SliderProps): JSX.Element => {
     useEffect(() => {
         let current = sliderRef.current;
         const handleAnimationEnd = () => {
-            console.log('dldaldal')
             dispatch({ type: "end" })
         }
 
@@ -68,7 +67,6 @@ const Slider = ({ photos, video }: SliderProps): JSX.Element => {
         if (index >= slidesCount.current) index = 0;
         if (index < 0) index = slidesCount.current - 1;
 
-        console.log('animat', (video ? true : false) && slidePosition === 0)
         dispatch({
             type: "prepare", data: {
                 offsetImage: photos[index - (video ? 1 : 0)],
