@@ -1,9 +1,11 @@
 import React, { useEffect, useReducer, useRef } from "react";
 import { sliderReducer } from "./reducer";
-import { SliderBullet, SliderBulletContainer, SliderContainer, SliderImage, SliderOffsetImage, LeftArrowImage, RightArrowImage, SliderLeftButton, SliderRightButton } from "./styled";
+import { LeftArrowImage, RightArrowImage, SlideMain, SlideOffset, SliderBullet, SliderBulletContainer, SliderContainer, SliderLeftButton, SlideImage, SliderRightButton, SlideVideo } from "./styled";
 import { SlideDirection, SliderProps, SliderState } from "./types";
 
-const Slider = ({ photos }: SliderProps): JSX.Element => {
+const Slider = ({ photos, video }: SliderProps): JSX.Element => {
+
+    const slidesCount = useRef<number>(photos.length + (video ? 1 : 0))
 
     const sliderInitialState: SliderState = {
         playAnimation: false,
@@ -11,6 +13,7 @@ const Slider = ({ photos }: SliderProps): JSX.Element => {
         currentImage: photos[0],
         offsetImage: "",
         slidePosition: 0,
+        slideNextPosition: 0,
         slideDirection: SlideDirection.Left
     }
 
@@ -22,12 +25,14 @@ const Slider = ({ photos }: SliderProps): JSX.Element => {
         currentImage,
         offsetImage,
         slidePosition,
+        slideNextPosition,
         slideDirection
     }, dispatch] = useReducer(sliderReducer, sliderInitialState);
 
     useEffect(() => {
         let current = sliderRef.current;
         const handleAnimationEnd = () => {
+            console.log('dldaldal')
             dispatch({ type: "end" })
         }
 
@@ -39,32 +44,37 @@ const Slider = ({ photos }: SliderProps): JSX.Element => {
         }
     })
 
-    const handleImageChange = (index: number) => {
+
+    const handleSlideChange = (index: number) => {
         if (playAnimation || isPrepared) return;
         const change = slidePosition - index;
         if (change !== 0) {
+            console.log()
             dispatch({
                 type: "prepare", data: {
-                    offsetImage: photos[index],
+                    offsetImage: photos[index - (video ? 1 : 0)],
                     slidePosition: index,
-                    slideDirection: (change < 0 ? SlideDirection.Right : SlideDirection.Left)
+                    slideDirection: (change < 0 ? SlideDirection.Right : SlideDirection.Left),
+                    playAnimation: (video ? true : false) && (slidePosition === 0 || index === 0)
                 }
             })
         }
     }
 
-    const handleImageChangeButtonClick = (direction: SlideDirection) => {
+    const handleSlideChangeButtonClick = (direction: SlideDirection) => {
         if (playAnimation || isPrepared) return;
 
         let index = slidePosition + (direction === SlideDirection.Left ? -1 : 1);
-        if (index >= photos.length) index = 0;
-        if (index < 0) index = photos.length - 1;
+        if (index >= slidesCount.current) index = 0;
+        if (index < 0) index = slidesCount.current - 1;
 
+        console.log('animat', (video ? true : false) && slidePosition === 0)
         dispatch({
             type: "prepare", data: {
-                offsetImage: photos[index],
+                offsetImage: photos[index - (video ? 1 : 0)],
                 slidePosition: index,
-                slideDirection: direction
+                slideDirection: direction,
+                playAnimation: (video ? true : false) && (slidePosition === 0 || index === 0)
             }
         })
     }
@@ -72,27 +82,38 @@ const Slider = ({ photos }: SliderProps): JSX.Element => {
     return (
         <>
             <SliderContainer ref={sliderRef}>
-                <SliderImage animate={playAnimation ? 1 : 0} direction={slideDirection} src={currentImage} />
-                <SliderOffsetImage animate={playAnimation ? 1 : 0} direction={slideDirection}
-                    src={offsetImage} onLoad={() => {
-                        if (isPrepared) {
-                            dispatch({
-                                type: "start"
-                            })
-                        }
-                    }} />
-                <SliderLeftButton onClick={() => handleImageChangeButtonClick(SlideDirection.Left)}>
+                <SlideMain animate={playAnimation ? 1 : 0} direction={slideDirection}>
+                    {(!video || slideNextPosition !== 0) && <SlideImage src={currentImage} />}
+                    {video && <SlideVideo animate={playAnimation} autoPlay={true} loop={true} muted src={video}
+                        style={{ visibility: slideNextPosition === 0 ? 'visible' : 'hidden' }} />}
+                </SlideMain>
+
+                <SlideOffset animate={playAnimation ? 1 : 0} direction={slideDirection}>
+                    {
+                        (!video || slidePosition !== 0) &&
+                        (<SlideImage src={offsetImage} onLoad={() => {
+                            if (isPrepared) {
+                                dispatch({ type: "start" })
+                            }
+                        }} />)
+                    }
+                    {video && (
+                        <SlideVideo autoPlay={false} style={{ visibility: slidePosition === 0 ? 'visible' : 'hidden' }} src={video} />)
+                    }
+                </SlideOffset>
+
+                <SliderLeftButton onClick={() => handleSlideChangeButtonClick(SlideDirection.Left)}>
                     <LeftArrowImage src="./assets/left-arrow.svg" />
                 </SliderLeftButton>
-                <SliderRightButton onClick={() => handleImageChangeButtonClick(SlideDirection.Right)}>
+                <SliderRightButton onClick={() => handleSlideChangeButtonClick(SlideDirection.Right)}>
                     <RightArrowImage src="./assets/right-arrow.svg" />
                 </SliderRightButton>
             </SliderContainer>
             <SliderBulletContainer>
                 {
-                    [...photos].map((_, index) => {
+                    [...Array(slidesCount.current)].map((_, index) => {
                         return <SliderBullet key={index} isPicked={index === slidePosition}
-                            onClick={() => handleImageChange(index)}>index</SliderBullet>
+                            onClick={() => handleSlideChange(index)}>index</SliderBullet>
                     })
                 }
             </SliderBulletContainer>

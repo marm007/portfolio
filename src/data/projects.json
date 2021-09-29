@@ -11,7 +11,7 @@
                 "./assets/filmapp-react/6.png",
                 "./assets/filmapp-react/7.png"
             ],
-            "video": "",
+            "video": "./assets/bunny_5s.mp4",
             "desc": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
             "repositoryURL": "https://github.com/marm007/filmapp-react-frontend",
             "frontendURL": "https://marm007.github.io/filmapp-react-frontend/",

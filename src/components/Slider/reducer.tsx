@@ -8,7 +8,8 @@ export const sliderReducer = (state: SliderState, action: SliderActions) => {
                 offsetImage: action.data.offsetImage,
                 slideDirection: action.data.slideDirection,
                 slidePosition: action.data.slidePosition,
-                isPrepared: true,
+                playAnimation: action.data.playAnimation,
+                isPrepared: true
             }
         case 'start':
             return {
@@ -21,6 +22,7 @@ export const sliderReducer = (state: SliderState, action: SliderActions) => {
                 playAnimation: false,
                 isPrepared: false,
                 currentImage: state.offsetImage,
+                slideNextPosition: state.slidePosition
             }
     }
 }

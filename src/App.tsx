@@ -55,6 +55,7 @@ const App = (): JSX.Element => {
             title={project.title}
             subtitle={project.subtitle}
             photos={project.photos}
+            video={project.video}
             desc={project.desc}
             techStack={project.techStack}
             frontendURL={project.frontendURL}

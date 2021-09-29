@@ -9,6 +9,7 @@ export type SliderState = {
     currentImage: string;
     offsetImage: string;
     slidePosition: number;
+    slideNextPosition: number;
     slideDirection: SlideDirection;
 }
 
@@ -18,13 +19,15 @@ export type SliderActions =
             offsetImage: string,
             slidePosition: number,
             slideDirection: SlideDirection,
+            playAnimation: boolean,
         }
     }
     | { type: 'start' }
     | { type: 'end' };
 
 export type SliderProps = {
-    photos: string[]
+    photos: string[],
+    video?: string;
 }
 
 export interface SliderBulletProps {
@@ -41,3 +44,5 @@ export interface SliderImageProps {
 export interface SliderButtonProps {
     onClick: object;
 }
+
+export type ImageLoadFunction = () => void;

@@ -35,7 +35,7 @@ const Project = ({
             </div>
 
         </ProejctHeader>
-        <Slider photos={photos} />
+        <Slider video={video} photos={photos} />
         <ProjectBody>
 
             <ProjectDescriptionContainer>

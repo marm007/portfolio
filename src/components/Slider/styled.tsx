@@ -1,7 +1,7 @@
-import styled, { keyframes, css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+import Slide from "./slide";
 import { SlideDirection, SliderBulletProps } from "./types";
-import Image from '../Image'
-
+import Video from "./video";
 const animationDuration = 1.5
 const animationTiming = 'ease'
 
@@ -86,19 +86,19 @@ export const SliderContainer = styled.div`
     }
 `;
 
-export const SliderImage = styled(Image)`
+export const SlideMain = styled(Slide)`
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
-    left: 0%;
-   
-    ${props => props.animate ? props.direction === SlideDirection.Left ? slideOutLeftAnimation : slideOutRightAnimation : css``}
+    left: 0;
 
+    ${props => props.animate ? props.direction === SlideDirection.Left ? slideOutLeftAnimation : slideOutRightAnimation : css``}
 `;
 
-export const SliderOffsetImage = styled(Image)`
+
+export const SlideOffset = styled(Slide)`
     position: absolute;
     top: 0;
     left: 100%;
@@ -108,6 +108,25 @@ export const SliderOffsetImage = styled(Image)`
 
     ${props => props.animate ? props.direction === SlideDirection.Left ? slideInLeftAnimation : slideInRightAnimation : noSlideAnimation}
 `;
+
+export const SlideVideo = styled(Video)`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+`;
+
+export const SlideImage = styled.img`
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+`;
+
 
 export const SliderBulletContainer = styled.div`
     display: flex;
