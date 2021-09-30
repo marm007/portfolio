@@ -11,7 +11,7 @@
                 "./assets/filmapp_react/6.png",
                 "./assets/filmapp_react/7.png"
             ],
-            "video": "./assets/filmapp_react/video.mp4",
+            "video": "",
             "desc": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
             "repositoryURL": [
                 {
@@ -47,7 +47,7 @@
                 "./assets/photoapp_angular/8.png",
                 "./assets/photoapp_angular/9.png"
             ],
-            "video": "./assets/photoapp_angular/video.mp4",
+            "video": "",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
             "repositoryURL": [
                 {
@@ -81,7 +81,7 @@
                 "./assets/filmapp_vue/4.png",
                 "./assets/filmapp_vue/5.png"
             ],
-            "video": "./assets/filmapp_vue/video.mp4",
+            "video": "",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
             "repositoryURL": [
                 {
@@ -124,6 +124,29 @@
             "backendURL": "",
             "techStack": [
                 "c#"
+            ]
+        },
+         {
+            "title": "Simple Java Projects",
+            "subtitle": "",
+            "photos": [
+                "./assets/simple_java_projects/1.png",
+                "./assets/simple_java_projects/2.png",
+                "./assets/simple_java_projects/3.png"
+            ],
+            "video": "./assets/simple_java_projects/video.mp4",
+            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+            "repositoryURL": [
+                {
+                    "url": "https://github.com/marm007/SimpleJavaProjects",
+                    "name": "Project"
+                }
+            ],
+            "frontendURL": "",
+            "backendURL": "",
+            "techStack": [
+                "java",
+                "spring"
             ]
         },
         {

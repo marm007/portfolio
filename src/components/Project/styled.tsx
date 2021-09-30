@@ -26,10 +26,14 @@ export const ProejctHeader = styled.div`
     @media (max-width: ${breakpoints.mobile}) {
         flex-wrap: wrap;
 
-        & > div {
+        & > div  {
             justify-content: center;
             display: flex;
             align-items: center;
+        }
+
+        & > div > div {
+            text-algin: center;
         }
     }
 `;
