@@ -7,5 +7,10 @@ export type ProjectProps = {
   backendURL?: string;
   desc: string;
   techStack: string[];
-  repositoryURL: string;
+  repositoryURL: RepositoryURL[];
 };
+
+export type RepositoryURL = {
+  name: string;
+  url: string;
+}

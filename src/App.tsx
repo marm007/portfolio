@@ -1,7 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useContext } from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import Menu from "./components/Menu";
 import Project from "./components/Project";
+import MenuContext from "./contexts/menu-context";
 import data from "./data/projects.json";
+import { breakpoints } from "./helpers";
 
 const Container = styled.div`
     text-align: justify;
@@ -21,8 +24,8 @@ const Header = styled.div`
       font-size: 16px;
     }
 
-    @media(max-width: 576px) {
-      padding: .5rem 0.5rem;
+    @media(max-width: ${breakpoints.mobile}) {
+      padding: .5rem 1rem;
     }
 `;
 
@@ -31,40 +34,66 @@ const Projects = styled.section`
     flex-wrap: wrap;
 `;
 
+type GlobalStyleProps = {
+  isMenuVisible: boolean;
+}
+const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
+  body {
+    background-color: #fff;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: ${({ isMenuVisible }) => isMenuVisible ? 'hidden' : 'unset'};
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  }
+`
 const App = (): JSX.Element => {
 
+  const { menu } = useContext(MenuContext);
+
   return (
-    <Container>
-      <Header>
-        <h1>Hi,</h1>
-        <span>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          quis mauris sodales libero mattis lobortis. Praesent nisi erat,
-          aliquet in bibendum a, lobortis a urna. Suspendisse potenti. Nunc
-          dignissim consectetur varius. Proin suscipit massa ipsum, nec
-          consequat leo posuere sit amet. Morbi pellentesque sem et tortor
-          consequat, pellentesque lacinia justo accumsan. Nunc suscipit lacus ut
-          risus venenatis egestas.
-        </span>
-      </Header>
+    <>
+      {console.log("show", menu.show)}
+      <GlobalStyle isMenuVisible={menu.show} />
+      <Container>
+        <Header>
+          <h1>Hi,</h1>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            quis mauris sodales libero mattis lobortis. Praesent nisi erat,
+            aliquet in bibendum a, lobortis a urna. Suspendisse potenti. Nunc
+            dignissim consectetur varius. Proin suscipit massa ipsum, nec
+            consequat leo posuere sit amet. Morbi pellentesque sem et tortor
+            consequat, pellentesque lacinia justo accumsan. Nunc suscipit lacus ut
+            risus venenatis egestas.
+          </span>
+        </Header>
 
-      <Projects>
-        {data.projects.map(project => {
-          return <Project
-            key={`project-${project.title}`}
-            title={project.title}
-            subtitle={project.subtitle}
-            photos={project.photos}
-            video={project.video}
-            desc={project.desc}
-            techStack={project.techStack}
-            frontendURL={project.frontendURL}
-            backendURL={project.backendURL}
-            repositoryURL={project.repositoryURL} />
-        })}
+        <Projects>
+          {data.projects.map(project => {
+            return <Project
+              key={`project-${project.title}`}
+              title={project.title}
+              subtitle={project.subtitle}
+              photos={project.photos}
+              video={project.video}
+              desc={project.desc}
+              techStack={project.techStack}
+              frontendURL={project.frontendURL}
+              backendURL={project.backendURL}
+              repositoryURL={project.repositoryURL} />
+          })}
 
-      </Projects>
-    </Container>
+        </Projects>
+
+        <Menu />
+      </Container>
+    </>
   );
 }
 

@@ -13,9 +13,18 @@
             ],
             "video": "",
             "desc": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-            "repositoryURL": "https://github.com/marm007/filmapp-react-frontend",
+            "repositoryURL": [
+                {
+                    "url": "https://github.com/marm007/filmapp-react-frontend",
+                    "name": "Frontend"
+                },
+                {
+                    "url": "https://github.com/marm007/filmapp-node-backend",
+                    "name": "Backend"
+                }
+            ],
             "frontendURL": "https://marm007.github.io/filmapp-react-frontend/",
-            "backendURL": "https://marm007.github.io/filmapp-react-frontend/",
+            "backendURL": "https://marm007-filmapp-backend-node.herokuapp.com/api/",
             "techStack": [
                 "react",
                 "nodejs",
@@ -40,9 +49,18 @@
             ],
             "video": "",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "repositoryURL": [
+                {
+                    "url": "https://github.com/marm007/photoapp-angular-frontend",
+                    "name": "Frontend"
+                },
+                {
+                    "url": "https://github.com/marm007/photoapp-django-backend",
+                    "name": "Backend"
+                }
+            ],
             "frontendURL": "https://marm007.github.io/photoapp-angular-frontend/",
-            "backendURL": "https://marm007.github.io/photoapp-angular-frontend/",
+            "backendURL": "https://marm007-insta-django-backend.herokuapp.com/admin/",
             "techStack": [
                 "angular",
                 "django",
@@ -65,9 +83,18 @@
             ],
             "video": "",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": "https://github.com/marm007/filmampp-vue-frontend",
-            "frontendURL": "https://marm007.github.io/filmampp-vue-frontend/",
-            "backendURL": "https://marm007.github.io/photoapp-angular-frontend/",
+            "repositoryURL": [
+                {
+                    "url": "https://github.com/marm007/photoapp-vue-frontend",
+                    "name": "Frontend"
+                },
+                {
+                    "url": "https://github.com/marm007/filmapp-java-backend",
+                    "name": "Backend"
+                }
+            ],
+            "frontendURL": "https://marm007.github.io/filmapp-vue-frontend/",
+            "backendURL": "https://marm007-filmapp-java-backend.herokuapp.com/api/",
             "techStack": [
                 "vue",
                 "spring",
@@ -87,7 +114,12 @@
             ],
             "video": "./assets/grain_growth_parallel/video.mp4",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "repositoryURL": [
+                {
+                    "url": "https://github.com/marm007/GrainGrowthParallel",
+                    "name": "Project"
+                }
+            ],
             "frontendURL": "",
             "backendURL": "",
             "techStack": [
@@ -104,7 +136,12 @@
             ],
             "video": "./assets/game_of_life/video.mp4",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "repositoryURL": [
+                {
+                    "url": "https://github.com/marm007/GameOfLifeProject",
+                    "name": "Project"
+                }
+            ],
             "frontendURL": "",
             "backendURL": "",
             "techStack": [
@@ -121,7 +158,12 @@
             ],
             "video": "./assets/cellular_automata/video.mp4",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "repositoryURL": [
+                {
+                    "url": "https://github.com/marm007/CellularAutomata",
+                    "name": "Project"
+                }
+            ],
             "frontendURL": "",
             "backendURL": "",
             "techStack": [
@@ -140,7 +182,12 @@
             ],
             "video": "./assets/grain_growth/video.mp4",
             "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": "https://github.com/marm007/photoapp-angular-frontend",
+            "repositoryURL": [
+                {
+                    "url": "https://github.com/marm007/GrainGrowth",
+                    "name": "Project"
+                }
+            ],
             "frontendURL": "",
             "backendURL": "",
             "techStack": [

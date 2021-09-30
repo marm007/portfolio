@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../helpers";
 
 export const ProjectContainer = styled.div`
     background: #fff;
@@ -21,8 +22,26 @@ export const ProejctHeader = styled.div`
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-`;
 
+    @media (max-width: ${breakpoints.mobile}) {
+        flex-wrap: wrap;
+
+        & > div {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+    }
+`;
+export const ProjectTitleContainer = styled.div`
+    padding-left: 1.5rem;
+    @media (max-width: ${breakpoints.mobile}) {
+        padding-left: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding-top: 15px;
+    }
+`
 export const ProjectTitle = styled.div` 
     width: auto;
     text-align: unset;
@@ -32,9 +51,26 @@ export const ProjectTitle = styled.div`
     & > h2 { 
         margin: 0 0 0.25rem;
     }
+    
+`;
+
+export const ProjectRepoContainer = styled.div`
+    @media (max-width: ${breakpoints.mobile}) {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 `;
 
 export const ProjectRepoLink = styled.a`
+    
+`;
+
+export const ProjectRepoButton = styled.button`
+    outline: 0;
+    overflow: hidden;
+    cursor: pointer;
+    background: transparent;
+    border: none;
 `;
 
 export const ProjectGithubLogo = styled.img`
