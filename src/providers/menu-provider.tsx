@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MenuContext from "../contexts/menu-context";
-import { RepositoryURL } from "../components/Project/types";
+import { ProjectLinksWebsites } from "../components/Project/types";
 
 const MenuProvider = ({ children }: { children: React.ReactNode }): JSX.Element => {
 
@@ -10,7 +10,7 @@ const MenuProvider = ({ children }: { children: React.ReactNode }): JSX.Element 
             top: number;
             left: number;
         }
-        buttons: RepositoryURL[];
+        buttons: ProjectLinksWebsites[];
     }>({
         show: false,
         position: {
@@ -20,8 +20,7 @@ const MenuProvider = ({ children }: { children: React.ReactNode }): JSX.Element 
         buttons: []
     })
 
-    const showMenu = (elementRef: React.MutableRefObject<HTMLButtonElement | null>, buttons: RepositoryURL[]) => {
-        console.log("Element", elementRef.current);
+    const showMenu = (elementRef: React.MutableRefObject<HTMLButtonElement | null>, buttons: ProjectLinksWebsites[]) => {
         const position = elementRef.current?.getBoundingClientRect();
         console.log(position)
         if (position) {

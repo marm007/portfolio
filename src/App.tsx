@@ -21,7 +21,11 @@ const Header = styled.div`
     line-height: 1.5;
 
     & > span {
-      font-size: 16px;
+      font-size: 18px;
+      font-family: Roboto,sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+      color: #555;
     }
 
     @media(max-width: ${breakpoints.mobile}) {
@@ -34,9 +38,23 @@ const Projects = styled.section`
     flex-wrap: wrap;
 `;
 
+const ButtonsContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+const Icon = styled.img`
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+`;
+
 type GlobalStyleProps = {
   isMenuVisible: boolean;
 }
+
 const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
   body {
     background-color: #fff;
@@ -64,16 +82,17 @@ const App = (): JSX.Element => {
         <Header>
           <h1>Hi,</h1>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            quis mauris sodales libero mattis lobortis. Praesent nisi erat,
-            aliquet in bibendum a, lobortis a urna. Suspendisse potenti. Nunc
-            dignissim consectetur varius. Proin suscipit massa ipsum, nec
-            consequat leo posuere sit amet. Morbi pellentesque sem et tortor
-            consequat, pellentesque lacinia justo accumsan. Nunc suscipit lacus ut
-            risus venenatis egestas.
+            My name is Marcin Mieszczak. I'm a responsible and hard working Junior Software Engineer.
+            I graduated from AGH UST with Bachelor of Science in Computer Science Degree.
+            During my studies, I created many programs in Java and C# including YouTube-like and Instagram-like applications and application to simulate Grain Growth in 2D and 3D spaces using parallel computing.
+            In my spare time, I also created simple games for Android and iOS.
+            I am familiar with technologies such as React, Angular, Vue, Node.js, Django and Spring Boot.
           </span>
         </Header>
-
+        <ButtonsContainer>
+          <a href=""> <Icon src="./assets/cv1.svg" /> </a>
+          <a href="https://github.com/marm007?tab=repositories"> <Icon src="./assets/github-icon.svg" /> </a>
+        </ButtonsContainer>
         <Projects>
           {data.projects.map(project => {
             return <Project
@@ -83,10 +102,9 @@ const App = (): JSX.Element => {
               photos={project.photos}
               video={project.video}
               desc={project.desc}
+              websites={project.websites}
               techStack={project.techStack}
-              frontendURL={project.frontendURL}
-              backendURL={project.backendURL}
-              repositoryURL={project.repositoryURL} />
+              projectLinks={project.projectLinks} />
           })}
 
         </Projects>

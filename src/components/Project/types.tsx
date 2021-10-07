@@ -3,14 +3,18 @@ export type ProjectProps = {
   subtitle?: string;
   photos: string[];
   video?: string;
-  frontendURL?: string;
-  backendURL?: string;
+  websites: object[];
   desc: string;
   techStack: string[];
-  repositoryURL: RepositoryURL[];
+  projectLinks: ProjectLinks;
 };
 
-export type RepositoryURL = {
+type ProjectLinks = {
+  icon: string;
+  websites: ProjectLinksWebsites[]
+}
+
+export type ProjectLinksWebsites = {
   name: string;
   url: string;
 }

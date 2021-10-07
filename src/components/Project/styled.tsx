@@ -58,18 +58,18 @@ export const ProjectTitle = styled.div`
     
 `;
 
-export const ProjectRepoContainer = styled.div`
+export const ProjectLogoContainer = styled.div`
     @media (max-width: ${breakpoints.mobile}) {
         flex-basis: 100%;
         max-width: 100%;
     }
 `;
 
-export const ProjectRepoLink = styled.a`
+export const ProjectLogoLink = styled.a`
     
 `;
 
-export const ProjectRepoButton = styled.button`
+export const ProjectLogoButton = styled.button`
     outline: 0;
     overflow: hidden;
     cursor: pointer;
@@ -77,7 +77,7 @@ export const ProjectRepoButton = styled.button`
     border: none;
 `;
 
-export const ProjectGithubLogo = styled.img`
+export const ProjectLogo = styled.img`
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -92,6 +92,7 @@ export const ProjectDescriptionContainer = styled.div`
     font-weight: 400;
     color: #747373;
     font-family: "Roboto",sans-serif;
+    line-height: 1.4;
 `;
 
 export const ProjectTechStacksContainer = styled.div`

@@ -3,7 +3,7 @@ import MenuContext from "../../contexts/menu-context";
 import { techStackIcons } from "../../data/icons";
 import Slider from "../Slider";
 import TechStack from "../TechStack";
-import { ProejctHeader, ProjectBody, ProjectContainer, ProjectDescriptionContainer, ProjectGithubLogo, ProjectRepoButton, ProjectRepoContainer, ProjectRepoLink, ProjectTechStacksContainer, ProjectTitle, ProjectTitleContainer, ProjectWebsiteLink } from "./styled";
+import { ProejctHeader, ProjectBody, ProjectContainer, ProjectDescriptionContainer, ProjectLogo, ProjectLogoButton, ProjectLogoContainer, ProjectLogoLink, ProjectTechStacksContainer, ProjectTitle, ProjectTitleContainer, ProjectWebsiteLink } from "./styled";
 import { ProjectProps } from "./types";
 
 
@@ -13,9 +13,8 @@ const Project = ({
     photos,
     video,
     desc,
-    repositoryURL,
-    frontendURL,
-    backendURL,
+    projectLinks,
+    websites,
     techStack
 }: ProjectProps): JSX.Element => {
 
@@ -24,28 +23,31 @@ const Project = ({
 
     return <ProjectContainer>
         <ProejctHeader>
-            <ProjectRepoContainer>
+            <ProjectLogoContainer>
                 {
-                    repositoryURL.length === 1 ?
-                        (<ProjectRepoLink href={repositoryURL[0]?.url}>
-                            <ProjectGithubLogo src="./assets/github-icon.svg" />
-                        </ProjectRepoLink>) :
-                        (<ProjectRepoButton ref={projectRepoButtonRef}
+                    projectLinks.websites.length === 1 ?
+                        (<ProjectLogoLink href={projectLinks.websites[0]?.url}>
+                            <ProjectLogo src={projectLinks.icon} />
+                        </ProjectLogoLink>) :
+                        (<ProjectLogoButton ref={projectRepoButtonRef}
                             onClick={() => {
-                                if (showMenu) showMenu(projectRepoButtonRef, repositoryURL)
+                                if (showMenu) showMenu(projectRepoButtonRef, projectLinks.websites)
                             }}>
-                            <ProjectGithubLogo src="./assets/github-icon.svg" />
-                        </ProjectRepoButton>)
+                            <ProjectLogo src={projectLinks.icon} />
+                        </ProjectLogoButton>)
                 }
-            </ProjectRepoContainer>
+            </ProjectLogoContainer>
             <ProjectTitleContainer>
                 <div>
                     <ProjectTitle>
                         <h2>{title}</h2>
                         {subtitle && <span style={{ color: "#747373" }}>{subtitle}</span>}
                     </ProjectTitle>
-                    {frontendURL && <ProjectWebsiteLink ><a href={frontendURL}>Live demo</a></ProjectWebsiteLink>}
-                    {backendURL && <ProjectWebsiteLink ><a href={backendURL}>API</a></ProjectWebsiteLink>}
+                    {websites.map((_, index) => {
+                        const website = _ as any;
+                        const keys = Object.keys(website)
+                        return <ProjectWebsiteLink key={index}><a href={website[keys[0]]}>{keys[0]}</a></ProjectWebsiteLink>
+                    })}
                 </div>
             </ProjectTitleContainer>
 

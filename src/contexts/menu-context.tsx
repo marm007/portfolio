@@ -1,5 +1,5 @@
 import React from "react";
-import { RepositoryURL } from "../components/Project/types";
+import { ProjectLinksWebsites } from "../components/Project/types";
 
 type MenuContextProps = {
     menu: {
@@ -8,10 +8,10 @@ type MenuContextProps = {
             top: number;
             left: number;
         }
-        buttons: RepositoryURL[];
+        buttons: ProjectLinksWebsites[];
 
     };
-    showMenu?: (elementRef: React.MutableRefObject<HTMLButtonElement | null>, buttons: RepositoryURL[]) => void;
+    showMenu?: (elementRef: React.MutableRefObject<HTMLButtonElement | null>, buttons: ProjectLinksWebsites[]) => void;
     hideMenu?: () => void;
 }
 

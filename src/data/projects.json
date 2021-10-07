@@ -7,24 +7,36 @@
                 "./assets/filmapp_react/1.png",
                 "./assets/filmapp_react/2.png",
                 "./assets/filmapp_react/3.png",
+                "./assets/filmapp_react/4.png",
                 "./assets/filmapp_react/5.png",
                 "./assets/filmapp_react/6.png",
-                "./assets/filmapp_react/7.png"
+                "./assets/filmapp_react/7.png",
+                "./assets/filmapp_react/8.png",
+                "./assets/filmapp_react/9.png"
             ],
             "video": "",
-            "desc": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-            "repositoryURL": [
+            "desc": "The project is supposed to be similar to YouTube. The frontend was created in React using functional components, hooks and React context. The backend was created in Node.js with Express framework. The application uses MongoDB to store data. It uses Basic and JWT authentication. After logging in, the jwt access token is generated along with the refresh token. The application also allows user to restore the password in case of forgetting. The main functionality of the application is to preview, add and like films. It also allows users to edit and delete created films. Users can create, add films and manage playlist privacy. The application also provides the ability to comment on films. Frontend is deployed to Github Pages, api to Heroku and database uses MongoDB Atlas.",
+            "projectLinks": {
+                "icon": "./assets/github-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://github.com/marm007/filmapp-react-frontend",
+                        "name": "Frontend"
+                    },
+                    {
+                        "url": "https://github.com/marm007/filmapp-node-backend",
+                        "name": "Backend"
+                    }
+                ]
+            },
+            "websites": [
                 {
-                    "url": "https://github.com/marm007/filmapp-react-frontend",
-                    "name": "Frontend"
+                    "Live demo": "https://marm007.github.io/filmapp-react-frontend/"
                 },
                 {
-                    "url": "https://github.com/marm007/filmapp-node-backend",
-                    "name": "Backend"
+                    "API": "https://marm007-filmapp-backend-node.herokuapp.com/api/"
                 }
             ],
-            "frontendURL": "https://marm007.github.io/filmapp-react-frontend/",
-            "backendURL": "https://marm007-filmapp-backend-node.herokuapp.com/api/",
             "techStack": [
                 "react",
                 "nodejs",
@@ -39,28 +51,40 @@
             "subtitle": "Instagram Like App",
             "photos": [
                 "./assets/photoapp_angular/1.png",
+                "./assets/photoapp_angular/2.png",
                 "./assets/photoapp_angular/3.png",
                 "./assets/photoapp_angular/4.png",
                 "./assets/photoapp_angular/5.png",
                 "./assets/photoapp_angular/6.png",
                 "./assets/photoapp_angular/7.png",
                 "./assets/photoapp_angular/8.png",
-                "./assets/photoapp_angular/9.png"
+                "./assets/photoapp_angular/9.png",
+                "./assets/photoapp_angular/10.png",
+                "./assets/photoapp_angular/11.png"
             ],
             "video": "",
-            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": [
+            "desc": "The project is supposed to be similar to Instagram. The frontend was created in Angular. The backend was created in Django using Django Rest Framework. The application uses PostgreSQL as DBMS. For periodic task execution it uses Celery with RabbitMQ. The application uses the Axes plugin for Django to implement simple blocking of brute-force attacks. It also uses reCAPTCHA while creating account to prevent spam. After account is created user has to activate it by clicking a url on received email. The application uses Basic and JWT authentication. After logging in, the jwt access token is generated along with the refresh token. The application also allows user to restore the password in case of forgetting. The main functionality of the application is to preview, add and like posts, follow users and create relations that are available only one day. It also allows users to edit and delete created posts. The application also provides the ability to comment on posts. Frontend is deployed to Github Pages, api to Heroku and for storing data application uses Heroku Postgres.",
+            "projectLinks": {
+                "icon": "./assets/github-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://github.com/marm007/photoapp-angular-frontend",
+                        "name": "Frontend"
+                    },
+                    {
+                        "url": "https://github.com/marm007/photoapp-django-backend",
+                        "name": "Backend"
+                    }
+                ]
+            },
+            "websites": [
                 {
-                    "url": "https://github.com/marm007/photoapp-angular-frontend",
-                    "name": "Frontend"
+                    "Live demo": "https://marm007.github.io/photoapp-angular-frontend/"
                 },
                 {
-                    "url": "https://github.com/marm007/photoapp-django-backend",
-                    "name": "Backend"
+                    "API": "https://marm007-insta-django-backend.herokuapp.com/admin/"
                 }
             ],
-            "frontendURL": "https://marm007.github.io/photoapp-angular-frontend/",
-            "backendURL": "https://marm007-insta-django-backend.herokuapp.com/admin/",
             "techStack": [
                 "angular",
                 "django",
@@ -82,19 +106,28 @@
                 "./assets/filmapp_vue/5.png"
             ],
             "video": "",
-            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": [
+            "desc": "The project is supposed to be similar to YouTube. The frontend was created in Vue. The backend was created in Spring Boot. The application uses MongoDB to store data. It uses Basic and JWT authentication. After logging in, the jwt access token is generated. The application also allows user to restore the password in case of forgetting. The main functionality of the application is to preview, add and like films. It also allows users to edit and delete created films. Users can create, add films and manage playlist privacy. The application also provides the ability to comment on films. Frontend is deployed to Github Pages, api to Heroku and database uses MongoDB Atlas.",
+            "projectLinks": {
+                "icon": "./assets/github-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://github.com/marm007/filmapp-vue-frontend",
+                        "name": "Frontend"
+                    },
+                    {
+                        "url": "https://github.com/marm007/filmapp-spring-backend",
+                        "name": "Backend"
+                    }
+                ]
+            },
+            "websites": [
                 {
-                    "url": "https://github.com/marm007/filmapp-vue-frontend",
-                    "name": "Frontend"
+                    "Live demo": "https://marm007.github.io/filmapp-vue-frontend/"
                 },
                 {
-                    "url": "https://github.com/marm007/filmapp-java-backend",
-                    "name": "Backend"
+                    "API": "https://marm007-filmapp-spring-backend.herokuapp.com/"
                 }
             ],
-            "frontendURL": "https://marm007.github.io/filmapp-vue-frontend/",
-            "backendURL": "https://marm007-filmapp-java-backend.herokuapp.com/api/",
             "techStack": [
                 "vue",
                 "spring",
@@ -113,20 +146,75 @@
                 "./assets/grain_growth_parallel/3.png"
             ],
             "video": "./assets/grain_growth_parallel/video.mp4",
-            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": [
-                {
-                    "url": "https://github.com/marm007/GrainGrowthParallel",
-                    "name": "Project"
-                }
-            ],
-            "frontendURL": "",
-            "backendURL": "",
+            "desc": "Application was written using WPF. It uses prallel computing to generate the microstructure of the material with the CA grain growth algorithm or Monte Carlo algorithm in 2D and 3D spaces. Calculations can be performed sequentially or in parallel using OpenMP and MPI. The application is divided into two parts: UI and Server. In the UI part of the application, the user can set simulation parameters, run multiple simulations simultaneously, check simulation times and view graphic models after simulation is finished. The data collected from the user is delivered to the server part of the application.",
+            "projectLinks": {
+                "icon": "./assets/github-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://github.com/marm007/GrainGrowthParallel",
+                        "name": "Project"
+                    }
+                ]
+            },
+            "websites": [],
             "techStack": [
                 "c#"
             ]
         },
-         {
+        {
+            "title": "What's that shape?",
+            "subtitle": "iOS Game",
+            "photos": [
+                "./assets/games_ios/1.png",
+                "./assets/games_ios/2.png",
+                "./assets/games_ios/3.png",
+                "./assets/games_ios/4.png",
+                "./assets/games_ios/5.png"
+            ],
+            "video": "",
+            "desc": "Application written in Swift using Storyboard. User has to use his imagination and on the basis of a few strokes deduce what may be in the drawing.",
+            "projectLinks": {
+                "icon": "./assets/app-store-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://apps.apple.com/us/app/whats-that-shape/id1562454281",
+                        "name": "Game"
+                    }
+                ]
+            },
+            "websites": [],
+            "techStack": [
+                "swift"
+            ]
+        },
+        {
+            "title": "Android Games",
+            "subtitle": "Simple puzzle and arcade games",
+            "photos": [
+                "./assets/games_android/1.png",
+                "./assets/games_android/2.png",
+                "./assets/games_android/3.png",
+                "./assets/games_android/4.png",
+                "./assets/games_android/5.png"
+            ],
+            "video": "",
+            "desc": "Games written in Java using Android Studio. Achievements and rankings are implemented in all games, as well as AdMob ads added. The '2448 Fast' game is an engaging math challenge where the user has to use math and sum the numbers to get the right result. Correct result gives the user more time for further math operations. The game ends when all empty spaces are filled with numbers. In the 'What's that?' game user has to use his head and guess the names of objects things, animals or activities.",
+            "projectLinks": {
+                "icon": "./assets/google-play-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://play.google.com/store/apps/developer?id=ThreeM+Games",
+                        "name": "Game"
+                    }
+                ]
+            },
+            "websites": [],
+            "techStack": [
+                "android",
+                "java"
+            ]
+        },
+        {
             "title": "Simple Java Projects",
             "subtitle": "",
             "photos": [
@@ -135,15 +223,17 @@
                 "./assets/simple_java_projects/3.png"
             ],
             "video": "./assets/simple_java_projects/video.mp4",
-            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": [
-                {
-                    "url": "https://github.com/marm007/SimpleJavaProjects",
-                    "name": "Project"
-                }
-            ],
-            "frontendURL": "",
-            "backendURL": "",
+            "desc": "Ten projects using java language and different frameworks and technologies. One of projects is Calculator build using Swing and mXparser library. Another project is application for project management using Kanban method. User can add new task, description and expiration date. Tasks are placed in one of three tables. Tasks can be moved between tables. User can save and read tasks with .txt or .xml format. Another project was rest api for creating simple surveys. It was created using Spring Boot. All projects source code are available at Github.",
+            "projectLinks": {
+                "icon": "./assets/github-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://github.com/marm007/SimpleJavaProjects",
+                        "name": "Project"
+                    }
+                ]
+            },
+            "websites": [],
             "techStack": [
                 "java",
                 "spring"
@@ -158,15 +248,17 @@
                 "./assets/game_of_life/3.png"
             ],
             "video": "./assets/game_of_life/video.mp4",
-            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": [
-                {
-                    "url": "https://github.com/marm007/GameOfLifeProject",
-                    "name": "Project"
-                }
-            ],
-            "frontendURL": "",
-            "backendURL": "",
+            "desc": "Application created using C# and Windows Forms. One of the first and most famous examples of a cellular automaton. Based on certain rules of transition, a cell is born or dies.",
+            "projectLinks": {
+                "icon": "./assets/github-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://github.com/marm007/GameOfLifeProject",
+                        "name": "Game of Life"
+                    }
+                ]
+            },
+            "websites": [],
             "techStack": [
                 "c#"
             ]
@@ -180,15 +272,17 @@
                 "./assets/cellular_automata/3.png"
             ],
             "video": "./assets/cellular_automata/video.mp4",
-            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": [
-                {
-                    "url": "https://github.com/marm007/CellularAutomata",
-                    "name": "Project"
-                }
-            ],
-            "frontendURL": "",
-            "backendURL": "",
+            "desc": "Application created using C# and Windows Forms. Cellular automata is a discrete model studied in computer science, mathematics, physics, complexity science, theoretical biology and microstructure modeling. This application shows an elementary cellular automaton where two states are possible and the rule for determining the state of a cell in the next generation depends only on the current state of the cell and its two direct neighbors.",
+            "projectLinks": {
+                "icon": "./assets/github-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://github.com/marm007/CellularAutomata",
+                        "name": "Project"
+                    }
+                ]
+            },
+            "websites": [],
             "techStack": [
                 "c#"
             ]
@@ -204,15 +298,17 @@
                 "./assets/grain_growth/5.png"
             ],
             "video": "./assets/grain_growth/video.mp4",
-            "desc": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-            "repositoryURL": [
-                {
-                    "url": "https://github.com/marm007/GrainGrowth",
-                    "name": "Project"
-                }
-            ],
-            "frontendURL": "",
-            "backendURL": "",
+            "desc": "Application created using C# and Windows Forms. Application lets use create a digital representation of the material using the CA method. The user can select different types of neighborhood, use Monte Carlo algorithm for border smoothing and perform simulation of dynamic recrystallization.",
+            "projectLinks": {
+                "icon": "./assets/github-icon.svg",
+                "websites": [
+                    {
+                        "url": "https://github.com/marm007/GrainGrowth",
+                        "name": "Project"
+                    }
+                ]
+            },
+            "websites": [],
             "techStack": [
                 "c#"
             ]

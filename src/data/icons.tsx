@@ -20,4 +20,5 @@ export const techStackIcons:TechStackType = {
     "swift": "./assets/icons/swift.svg",
     "typescript": "./assets/icons/typescript-icon.svg",
     "vue": "./assets/icons/vue.svg",
+    "android": "./assets/icons/android-icon.svg"
 }
