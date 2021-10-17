@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "React Film App",
-            "subtitle": "YouTube Like App",
+            "subtitle": "YouTube-like App",
             "photos": [
                 "./assets/filmapp_react/1.png",
                 "./assets/filmapp_react/2.png",
@@ -48,7 +48,7 @@
         },
         {
             "title": "Angular Photo App",
-            "subtitle": "Instagram Like App",
+            "subtitle": "Instagram-like App",
             "photos": [
                 "./assets/photoapp_angular/1.png",
                 "./assets/photoapp_angular/2.png",
@@ -97,7 +97,7 @@
         },
         {
             "title": "Vue Film App",
-            "subtitle": "YouTube Like App",
+            "subtitle": "YouTube-like App",
             "photos": [
                 "./assets/filmapp_vue/1.png",
                 "./assets/filmapp_vue/2.png",
@@ -146,7 +146,7 @@
                 "./assets/grain_growth_parallel/3.png"
             ],
             "video": "./assets/grain_growth_parallel/video.mp4",
-            "desc": "Application was written using WPF. It uses prallel computing to generate the microstructure of the material with the CA grain growth algorithm or Monte Carlo algorithm in 2D and 3D spaces. Calculations can be performed sequentially or in parallel using OpenMP and MPI. The application is divided into two parts: UI and Server. In the UI part of the application, the user can set simulation parameters, run multiple simulations simultaneously, check simulation times and view graphic models after simulation is finished. The data collected from the user is delivered to the server part of the application.",
+            "desc": "Application was written using WPF. It uses parallel computing to generate the microstructure of the material with the CA grain growth algorithm or Monte Carlo algorithm in 2D and 3D spaces. Calculations can be performed sequentially or in parallel using OpenMP and MPI. The application is divided into two parts: UI and Server. In the UI part of the application, the user can set simulation parameters, run multiple simulations simultaneously, check simulation times and view graphic models after simulation is finished. The data collected from the user is delivered to the server part of the application.",
             "projectLinks": {
                 "icon": "./assets/github-icon.svg",
                 "websites": [
@@ -172,7 +172,7 @@
                 "./assets/games_ios/5.png"
             ],
             "video": "",
-            "desc": "Application written in Swift using Storyboard. User has to use his imagination and on the basis of a few strokes deduce what may be in the drawing.",
+            "desc": "Game was written in Swift using Xcode. The game uses Game Center to integrate achievements and leaderboards, and AdMob to display ads. The game requires iOS 10.0 or later. User has to use his imagination and on the basis of a few strokes deduce what may be in the drawing.",
             "projectLinks": {
                 "icon": "./assets/app-store-icon.svg",
                 "websites": [
@@ -195,10 +195,16 @@
                 "./assets/games_android/2.png",
                 "./assets/games_android/3.png",
                 "./assets/games_android/4.png",
-                "./assets/games_android/5.png"
+                "./assets/games_android/5.png",
+                "./assets/games_android/6.png",
+                "./assets/games_android/7.png",
+                "./assets/games_android/8.png",
+                "./assets/games_android/9.png",
+                "./assets/games_android/10.png",
+                "./assets/games_android/11.png"
             ],
             "video": "",
-            "desc": "Games written in Java using Android Studio. Achievements and rankings are implemented in all games, as well as AdMob ads added. The '2448 Fast' game is an engaging math challenge where the user has to use math and sum the numbers to get the right result. Correct result gives the user more time for further math operations. The game ends when all empty spaces are filled with numbers. In the 'What's that?' game user has to use his head and guess the names of objects things, animals or activities.",
+            "desc": "Games were written in Java using Android Studio. Achievements and rankings are implemented in all games, as well as AdMob ads added. In the Stick Bunny game, the user has to move from one platform to another. The goal is to go through as many platforms as possible without falling and to collect carrots. The '2448 Fast' game is an engaging math challenge where the user has to use math and sum the numbers to get the right result. Correct result gives the user more time for further math operations. The game ends when all empty spaces are filled with numbers. In the 'What's that?' game user has to use his head and guess the names of objects things, animals or activities. In Perfect Brain, the user has to add, subtract, multiply and divide numbers to get the right result. All the math tasks should be completed in as few moves as possible.",
             "projectLinks": {
                 "icon": "./assets/google-play-icon.svg",
                 "websites": [

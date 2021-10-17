@@ -22,7 +22,6 @@ const MenuProvider = ({ children }: { children: React.ReactNode }): JSX.Element 
 
     const showMenu = (elementRef: React.MutableRefObject<HTMLButtonElement | null>, buttons: ProjectLinksWebsites[]) => {
         const position = elementRef.current?.getBoundingClientRect();
-        console.log(position)
         if (position) {
             const top = position.top + window.scrollY + position.height;
             const left = position.left + window.scrollX - 15;

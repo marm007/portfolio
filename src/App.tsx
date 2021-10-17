@@ -76,21 +76,20 @@ const App = (): JSX.Element => {
 
   return (
     <>
-      {console.log("show", menu.show)}
       <GlobalStyle isMenuVisible={menu.show} />
       <Container>
         <Header>
           <h1>Hi,</h1>
           <span>
-            My name is Marcin Mieszczak. I'm a responsible and hard working Junior Software Engineer.
+            My name is Marcin Mieszczak. I'm a responsible and hardworking Junior Software Engineer.
             I graduated from AGH UST with Bachelor of Science in Computer Science Degree.
-            During my studies, I created many programs in Java and C# including YouTube-like and Instagram-like applications and application to simulate Grain Growth in 2D and 3D spaces using parallel computing.
-            In my spare time, I also created simple games for Android and iOS.
+            During my studies, I have created many programs in Javascript, Java, C#, C++ and Python including YouTube-like and Instagram-like applications and application to simulate Grain Growth in 2D and 3D spaces using parallel computing.
+            In my spare time, I've also created some simple games for Android and iOS.
             I am familiar with technologies such as React, Angular, Vue, Node.js, Django and Spring Boot.
           </span>
         </Header>
         <ButtonsContainer>
-          <a href=""> <Icon src="./assets/cv1.svg" /> </a>
+          <a href="./assets/Marcin_Mieszczak_CV.pdf"> <Icon src="./assets/cv1.svg" /> </a>
           <a href="https://github.com/marm007?tab=repositories"> <Icon src="./assets/github-icon.svg" /> </a>
         </ButtonsContainer>
         <Projects>

@@ -48,7 +48,6 @@ const Slider = ({ photos, video }: SliderProps): JSX.Element => {
         if (playAnimation || isPrepared) return;
         const change = slidePosition - index;
         if (change !== 0) {
-            console.log()
             dispatch({
                 type: "prepare", data: {
                     offsetImage: photos[index - (video ? 1 : 0)],
