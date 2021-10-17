@@ -82,7 +82,10 @@
                     "Live demo": "https://marm007.github.io/photoapp-angular-frontend/"
                 },
                 {
-                    "API": "https://marm007-insta-django-backend.herokuapp.com/admin/"
+                    "API": "https://marm007-insta-django-backend.herokuapp.com/api/"
+                },
+                {
+                    "Admin Page": "https://marm007-insta-django-backend.herokuapp.com/admin/"
                 }
             ],
             "techStack": [
