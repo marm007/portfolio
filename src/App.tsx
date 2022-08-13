@@ -81,15 +81,15 @@ const App = (): JSX.Element => {
         <Header>
           <h1>Hi,</h1>
           <span>
-            My name is Marcin Mieszczak. I'm a responsible and hardworking Software Engineer.
+            My name is Marcin Mieszczak. I'm a responsible and hardworking Full-Stack Software Developer.
             I graduated from AGH UST with Bachelor of Science in Computer Science Degree.
             During my studies, I have created many programs in Javascript, Java, C#, C++ and Python including YouTube-like and Instagram-like applications and application to simulate Grain Growth in 2D and 3D spaces using parallel computing.<br />
             In my spare time, I've also created some simple games for Android and iOS.
             I am familiar with technologies such as React, Angular, Vue, Node.js, Django and Spring Boot.<br />
-            I'm currently working as a Software Engineer in <a href="https://www.eurofirany.com.pl/">Eurofirany</a>. I've started to work here full-time in November 2021 and due that time I've increased my knowledge a lot.
+            I'm currently working as a Full-Stack Software Developer in <a href="https://www.eurofirany.com.pl/">Eurofirany</a>. I've started to work here full-time in November 2021 and due that time I've increased my knowledge a lot.
             During my work I've developed a web application frontend in React. The application facilitates the management of shipments in the warehouse.
             During the development of this application, I created packages with components for use in future projects.
-            I am currently focusing on developing a mobile app in React Native for scanning and ordering products.
+            I am currently focusing on developing a mobile app in React Native for scanning and ordering products. I'm also responsible for the development of the backend for this application.
           </span>
         </Header>
         <ButtonsContainer>
